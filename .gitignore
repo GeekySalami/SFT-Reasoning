@@ -1,0 +1,45 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment and editor files
+.env
+.env.*
+.vscode/
+.idea/
+
+# Downloaded model weights and Hugging Face caches. These can be several GB;
+# obtain them from Hugging Face instead of committing them to Git.
+models/*
+!models/.gitkeep
+**/.cache/
+
+# Local datasets and dataset caches. Build with scripts/get_data.py.
+data/*
+!data/.gitkeep
+
+# Training products, checkpoints, TensorBoard logs, and benchmark outputs.
+# Publish a selected adapter separately (for example on the Hugging Face Hub).
+artifacts/
+scripts/outputs/
+scripts/logs/
+logs/
+runs/
+*.tfevents.*
+results/*
+!results/gsm8k_results.json
+
+# Machine-specific ROCm/Python environment
+scripts/kernal/therock_venv/
+
+# OS files
+.DS_Store

@@ -1,0 +1,22 @@
+[project]
+name = "sft-tinyllama"
+version = "0.1.0"
+description = "Memory-conscious LoRA fine-tuning experiments for Qwen language models."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate>=1.0",
+    "datasets>=3.0",
+    "peft>=0.13",
+    "torch>=2.4",
+    "tqdm>=4.66",
+    "transformers>=4.46",
+    "trl>=0.12",
+]
+
+[project.optional-dependencies]
+dev = ["ruff>=0.8"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
